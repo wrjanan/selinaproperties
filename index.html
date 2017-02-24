@@ -59,7 +59,7 @@
 							<a class="page-scroll" href="#about">Welcome</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#download">Download</a>
+							<a class="page-scroll" href="#download">Showcase</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="#contact">Contact</a>
@@ -135,26 +135,26 @@
 									<div class="row text-center sp-photoset">
 
 										<div class="col-md-9 sp-photoset-main">
-											<img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16406773_639169349599898_2330990487923139587_n.jpg?oh=a13393aee62200b54354146847e5b451&oe=58FE34A2" alt="Living Room" class="wow animated fadeInRight img-rounded img-fluid" data-wow-delay="0.9s">
+											<img id="sp-main-img" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16406773_639169349599898_2330990487923139587_n.jpg?oh=a13393aee62200b54354146847e5b451&oe=58FE34A2" alt="Living Room" class="wow animated fadeInRight img-rounded img-fluid" data-wow-delay="0.9s">
 
 										</div>
 										<div class="col-md-2 sp-photoset-secondary">
 											<div class="row view hm-zoom">
-												<img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16472907_639169386266561_931370197489786324_n.jpg?oh=88d66dd15bcbc3c813881f1aa8667f08&oe=5942B454" alt="Kitchen" class="wow animated flipInX img-rounded img-fluid" data-wow-delay="1.2s">
+												<img id="sp-sec1-img" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16472907_639169386266561_931370197489786324_n.jpg?oh=88d66dd15bcbc3c813881f1aa8667f08&oe=5942B454" alt="Kitchen" class="wow animated flipInX img-rounded img-fluid" data-wow-delay="1.2s">
 												<div class="mask flex-center" style="cursor:pointer;" onclick="swapPhotos(this)">
 													<p class="white-text wow animated flipInX" data-wow-delay="1.4s">Kitchen</p>
 												</div>
 											</div>			
 
 											<div class="row view hm-zoom">
-												<img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16508882_639169412933225_630981703635766773_n.jpg?oh=d66c2bf59fa78f2a4c57c7b9f11c90bb&oe=592FD2B4" alt="Facilities" class="wow animated flipInX img-rounded img-fluid" data-wow-delay="1.6s">
+												<img id="sp-sec2-img" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16508882_639169412933225_630981703635766773_n.jpg?oh=d66c2bf59fa78f2a4c57c7b9f11c90bb&oe=592FD2B4" alt="Facilities" class="wow animated flipInX img-rounded img-fluid" data-wow-delay="1.6s">
 												<div class="mask flex-center" style="cursor:pointer;"  onclick="swapPhotos(this)">
 													<p class="white-text wow animated flipInX" data-wow-delay="1.8s">Facilities</p>
 												</div>
 											</div>
 
 											<div class="row view hm-zoom">
-												<img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16508933_639169329599900_9109052621181550416_n.jpg?oh=08ec0b3c668869fdb4d8b07ef6e710cb&oe=592C3C02" alt="Balcony" class="wow animated flipInX img-rounded img-fluid" data-wow-delay="1.9s">
+												<img id="sp-sec3-img" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p600x600/16508933_639169329599900_9109052621181550416_n.jpg?oh=08ec0b3c668869fdb4d8b07ef6e710cb&oe=592C3C02" alt="Balcony" class="wow animated flipInX img-rounded img-fluid" data-wow-delay="1.9s">
 												<div class="mask flex-center" style="cursor:pointer;" onclick="swapPhotos(this)">
 													<p class="white-text wow animated flipInX" data-wow-delay="2.1s">Balcony</p>
 												</div>
@@ -169,10 +169,10 @@
 										<hr>
 
 										<ul style="text-align:left;padding-left:50px;padding-right:50px;">
-											<li><Strong>Size:</Strong> 1098 sq ft</li>
-											<li><Strong>Properties:</Strong> Ground floor unit with balcony, 2 Bedrooms, Full Facilities</li>
-											<li><Strong>Location:</Strong> 5 mins <u>walk</u> to Little India, 15 mins <u>walk</u> to Douby gauht MRT</li>
-											<li><Strong>Experience: </Strong> Cosy and beautiful condition, with windy breeze especially during the sun set and past midnight</li>
+											<li><Strong>Size:</Strong>&nbsp; <span id="sp-size"> 1098 sq ft</span></li>
+											<li><Strong>Facilities:</Strong>&nbsp; <span id="sp-facilities"> Ground floor unit with balcony, 2 Bedrooms, Full Facilities</span></li>
+											<li><Strong>Location:</Strong>&nbsp; <span id="sp-location"> 5 mins <u>walk</u> to Little India, 15 mins <u>walk</u> to Douby gauht MRT</span></li>
+											<li><Strong>Experience: </Strong>&nbsp; <span id="sp-experience"> Cosy and beautiful condition, with windy breeze especially during the sun set and past midnight</span></li>
 										</ul> 
 
 									</div>
@@ -206,20 +206,28 @@
 					<h2  class="wow bounceInLeft" data-wow-delay="0.1s">Contact Point</h2>
 					<div class="wow fadeIn" data-wow-delay="0.4s">
 						<p>Interested in any of the properties in the list above? </p><p>Feel free to give me a note and we can work on something more focused to your needs.</p>
-
-						<p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+<br>
+<br>
+						<p>Senior Marketing Director</p>
+						<p><a>Selina, +65 9009 6059</a>
 						</p>
+						
 						<ul class="list-inline banner-social-buttons">
+							
+							<li>
+								<a href="mailto:selinawongwmh@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Mail</span></a>
+							</li>
+						</ul>
+						<!-- 
+//extra social icons
 							<li>
 								<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
 							</li>
 							<li>
-								<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-							</li>
-							<li>
 								<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
 							</li>
-						</ul>
+-->
+
 					</div>
 				</div>
 			</div>
@@ -253,102 +261,6 @@
 
 		<!-- Theme JavaScript -->
 		<script src="js/grayscale.js"></script>
-
-		<script>
-			
-			
-
-			var browserHeight;
-			var spVideoState = true;
-			function toggleVideo(state) {
-				// if state == 'hide', hide. Else: show video
-
-				//spVideoState = !spVideoState;
-				var div = document.getElementById("popupVid");
-				var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-				//div.style.display = state == 'hide' ? 'none' : '';
-				func = state == false ? 'pauseVideo' : 'playVideo';
-				iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
-			}
-
-			$(document).ready(function() {
-				browserHeight = $(window).height();
-
-				document.getElementById("header").style.height = (browserHeight) + "px";
-
-				new WOW().init();
-
-			})
-
-
-			// deal with the page getting resized or scrolled
-			window.addEventListener("scroll", updatePosition, false);
-			window.addEventListener("resize", updatePosition, false);
-
-			function updatePosition() {
-				// add your code to update the position when your browser
-				// is resized or scrolled
-				var vidPosition = getPosition(document.getElementById('popupVid'));
-
-				if(vidPosition.y < (-browserHeight)) {
-					toggleVideo(false);
-				} else {
-					toggleVideo(true);
-				}
-			}
-
-			// Helper function to get an element's exact position
-			function getPosition(el) {
-				var xPos = 0;
-				var yPos = 0;
-
-				while (el) {
-					if (el.tagName == "BODY") {
-						// deal with browser quirks with body/window/document and page scroll
-						var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
-						var yScroll = el.scrollTop || document.documentElement.scrollTop;
-
-						xPos += (el.offsetLeft - xScroll + el.clientLeft);
-						yPos += (el.offsetTop - yScroll + el.clientTop);
-					} else {
-						// for all other non-BODY elements
-						xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-						yPos += (el.offsetTop - el.scrollTop + el.clientTop);
-					}
-
-					el = el.offsetParent;
-				}
-				return {
-					x: xPos,
-					y: yPos
-				};
-			}
-
-			function swapPhotos(el) {
-				var secPhoto = el.parentElement.firstElementChild;
-				var secPhotoImg = el.parentElement.firstElementChild.attributes.src.value;
-				var mainPhoto = el.parentElement.parentElement.parentElement.firstElementChild.firstElementChild;
-				var mainPhotoImg = el.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.attributes.src.value;
-
-				secPhoto.attributes.src.value = mainPhotoImg;
-				mainPhoto.attributes.src.value = secPhotoImg;
-
-				secPhoto.nextSibling.nextSibling.firstElementChild.textContent = mainPhoto.attributes.alt.value;
-
-				var tempAltVal = secPhoto.attributes.alt.value;
-				secPhoto.attributes.alt.value = mainPhoto.attributes.alt.value;
-				mainPhoto.attributes.alt.value = tempAltVal;
-			}
-
-			function swapShowcase(el, next) {
-				//next is boolean where true = next
-				console.log(el);
-				console.log(next);
-
-
-			}
-		</script>
-
 	</body>
 
 </html>
